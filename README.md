@@ -31,6 +31,22 @@ those
   mentioned above.
 * After assigning a name, put it in `registry.txt`
 
+## Bonus
+
+Robot names being locally unique is lame. Make them globally unique
+instead. Instead of looking at name_suggestions.txt, get the JSON list
+of name suggestions from an api and display those.
+
+After the user has chosen a name, send a POST request to the same url to
+remove the name from the list.
+
+_Note_ I ran out of free Heroku repos, so the host for the api will change.
+You can run it yourself by checking out the name_api branch of this
+repo.
+
+The route that you'll want to GET is /names.json
+For POSTing a taken name, POST the name to the same url.
+
 ## Resources
 
 [Bash Scripting
