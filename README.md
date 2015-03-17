@@ -28,10 +28,12 @@ of name suggestions from an api and display those.
 
 After the user has chosen a name, send a POST request with 'name' =>
 _name user chose_ to the same url to
-remove the name from the list. 
+register the name. 
 
 If the POST request returns a 409 http response, the name is taken.
 You'll have to prompt the user for a new one :) 
+
+If the POST request returns 200, you're good to go!
 
 _Note_ I ran out of free Heroku repos, so the host for the api will change.
 You can run it yourself by checking out the name_api branch of this
