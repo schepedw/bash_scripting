@@ -26,8 +26,9 @@ Robot names being locally unique is lame. Make them globally unique
 instead. Instead of looking at name_suggestions.txt, get the JSON list
 of name suggestions from an api and display those.
 
-After the user has chosen a name, send a POST request to the same url to
-remove the name from the list.
+After the user has chosen a name, send a POST request with 'name' =>
+_name user chose_ to the same url to
+remove the name from the list. 
 
 If the POST request returns a 409 http response, the name is taken.
 You'll have to prompt the user for a new one :) 
