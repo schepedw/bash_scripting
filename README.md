@@ -18,7 +18,7 @@ those
   `name_registry.txt` to make sure the name isn't already taken.
 * If a name is taken, notify the user and go through the prompting steps
   mentioned above.
-* After assigning a name, put it in `registry.txt`
+* After assigning a name, put it in `name_registry.txt`
 
 ## Bonus
 
